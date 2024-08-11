@@ -1,0 +1,17 @@
+{
+  "name": "powerwashing",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.8",
+    "dotenv": "^10.0.0",
+    "cors": "^2.8.5",
+    "jsonwebtoken": "^8.5.1",
+    "bcryptjs": "^2.4.3"
+  }
+}
