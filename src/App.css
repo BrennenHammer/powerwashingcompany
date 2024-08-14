@@ -6,20 +6,54 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 100;
 }
 
-.navbar a{
+.navbar a {
   padding: 5px;
   margin-left: 25px;
   color: black;
-  text-decoration: none;
+  text-decoration: none; 
 }
-.home-img1{
+
+.image-container {
+  display: flex;
+  margin-top: 4vw;
+}
+
+.image-wrapper {
+  position: relative;
   width: 50%;
 }
-.homeheader{
-  height: 100px;
-  background-color: rgb(167, 121, 121);
-  
+
+.home-img1 {
+  width: 100%;
+  display: block;
+}
+
+.homeheader {
+  position: absolute;
+  font-size: 1.4em;
+  top: 20%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: rgb(15, 9, 9);
+  text-align: center;
+}
+
+.home-img2 {
+  width: 50%
+}
+
+
+@media (max-width: 768px) {
+  .homeheader h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeheader h1 {
+    font-size: 1.2em;
+  }
 }
