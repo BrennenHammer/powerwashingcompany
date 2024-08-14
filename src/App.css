@@ -44,7 +44,10 @@
 .home-img2 {
   width: 50%
 }
-
+.logo{
+  border-radius: 50%;
+  height: 23px;
+}
 
 @media (max-width: 768px) {
   .homeheader h1 {
@@ -55,5 +58,47 @@
 @media (max-width: 480px) {
   .homeheader h1 {
     font-size: 1.2em;
+  }
+}
+
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 70%; /* Ensures the section takes up 90% of the screen */
+  padding: 20px 0; /* Adds some padding on the top and bottom */
+}
+
+.service {
+  flex: 1 1 20%; /* Ensures each service takes up about 22% of the width (4 services total with some space) */
+  margin: 20px;
+  margin-top: -12%;
+  z-index: 10;
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+.service-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Add rounded corners to the images */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .service {
+    flex: 1 1 45%; /* Adjusts to 45% width on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    flex-direction: column;
+  }
+  .service {
+    flex: 1 1 100%; /* Stacks each service on top of each other on small screens */
   }
 }
