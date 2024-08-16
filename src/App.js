@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Quote from './pages/Quote';
+import Navbar from './components/Navbar.jsx';
+import Home from './pages/Home.jsx';
+import Services from './pages/Services.jsx';
+import About from './pages/About.jsx';
+import Contact from './pages/Contact.jsx';
+import Quote from './pages/Quote.jsx';
 import './App.css';
 
 function App() {
@@ -17,7 +17,6 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/quote" element={<Quote />} />
-
       </Routes>
     </Router>
   );
