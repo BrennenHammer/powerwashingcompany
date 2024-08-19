@@ -1,16 +1,6 @@
-.navbar {
-  display: flex;
-  align-items: center;
-  background-color: #ddcfcf;
-  height: 4vw;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}
-
 .navbar-logo {
   display: flex;
+  margin-right: 20%;
   align-items: center; /* Vertically align logo and text */
   flex: 1; /* This will allow the logo section to take up space */
   justify-content: center; /* This centers the logo and company name */
@@ -21,6 +11,10 @@
   margin-left: 25px;
   color: black;
   text-decoration: none; 
+}
+.numberinnavbar{
+  margin-right: 20%;
+  color: rgb(8, 8, 192);
 }
 
 .image-container {
@@ -43,6 +37,8 @@
   font-size: 1.4em;
   top: 20%;
   left: 75%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
   transform: translate(-50%, -50%);
   color: rgb(15, 9, 9);
   text-align: center;
@@ -57,11 +53,7 @@
   height: 25px;
   margin-right: 5px;
 }
-.navbar-logo {
-  display: flex;
-  align-items: center; /* Vertically align logo and text */
-  margin-left: -175px; /* Shift logo and text 15px from the left */
-}
+
 
 @media (max-width: 768px) {
   .homeheader h1 {
@@ -118,12 +110,12 @@
 }
 .navbar-links {
   display: flex;
-  gap: 20px; /* Adjust spacing between links */
-  margin-right: 100px; /* Shift links 15px from the right */
-}.navbar {
+  gap: 20px;
+}
+.navbar {
   display: flex;
   align-items: center;
-  background-color: #ddcfcf;
+  background-color: #e9dfdf;
   height: 4vw;
   position: fixed;
   top: 0;
@@ -132,12 +124,6 @@
   justify-content: space-between; /* Space out logo and links */
   padding: 0 15px; /* Adds padding to both sides */
   box-sizing: border-box; /* Ensures padding doesn't push content off-screen */
-}
-
-.navbar-logo {
-  display: flex;
-  align-items: center; /* Vertically align logo and text */
-  flex: 1;
 }
 
 .logo {

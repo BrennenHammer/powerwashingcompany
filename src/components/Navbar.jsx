@@ -8,7 +8,9 @@ function Navbar() {
       <div className="navbar-logo">
         <img className='logo' src={logo} alt="Company Logo" />
         <span>Tylers Pressure Washing</span>
+        
       </div>
+      <p className='numberinnavbar'>317-420-6868</p>
       <div className="navbar-links">
         <Link to="/">Home</Link>
         <Link to="/services">Services</Link>
