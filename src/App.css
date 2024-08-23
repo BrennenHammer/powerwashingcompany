@@ -165,4 +165,78 @@
     margin-top: 10px; /* Add some space between logo and links */
   }
 }
+.about-section {
+  background-color: #f4f4f4;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.about-section h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-section h2 {
+  color: #555;
+  font-size: 1.8em;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.about-mission {
+  font-size: 1.2em;
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-content ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.about-content ul li strong {
+  color: #222;
+}
+
+.about-content p {
+  margin-top: 20px;
+  color: #666;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 30px;
+  }
+
+  .about-section h1 {
+    font-size: 2em;
+  }
+
+  .about-section h2 {
+    font-size: 1.5em;
+  }
+
+  .about-mission, .about-content p, .about-content ul li {
+    font-size: 1em;
+  }
+}
 
