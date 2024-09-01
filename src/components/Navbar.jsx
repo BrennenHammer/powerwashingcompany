@@ -10,7 +10,7 @@ function Navbar() {
         <span>Tylers Pressure Washing</span>
         
       </div>
-      <p className='numberinnavbar'>317-789-1011</p>
+      <p className='numberinnavbar'>317-789-1012</p>
       <div className="navbar-links">
         <Link to="/">Home</Link>
         <Link to="/services">Services</Link>
