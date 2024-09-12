@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+
 const QuotePage = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -7,6 +8,7 @@ const QuotePage = () => {
   const [address, setAddress] = useState('');
   const [service, setService] = useState('');
   const [message, setMessage] = useState('');
+  const recipientEmail = 'your-email@example.com';
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,6 +19,7 @@ const QuotePage = () => {
       address,
       service,
       message,
+      recipientEmail,
     };
     try {
       const response = await axios.post('/api/quotes', quote);
@@ -59,6 +62,7 @@ const QuotePage = () => {
             <option value="powerwashing">Powerwashing</option>
             <option value="deck-cleaning">Deck Cleaning</option>
             <option value="fence-cleaning">Fence Cleaning</option>
+            <option value="other-operations">Other operations</option>
           </select>
         </label>
         <br />

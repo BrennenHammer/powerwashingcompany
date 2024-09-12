@@ -274,3 +274,10 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #3dac40;
 }
+.service-img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-img:hover {
+  transform: scale(1.1);
+}
