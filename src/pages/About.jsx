@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutPage = () => {
     return (
-        <div class="about-section">
+        <div className="about-section">
   <h1>About Us</h1>
   <p className="about-mission">Our mission is simple: to offer the highest quality powerwashing services with unparalleled customer satisfaction...</p>
   
@@ -21,9 +21,7 @@ const AboutPage = () => {
       <li>Commercial Powerwashing: Storefronts, parking lots, building exteriors, and more.</li>
       <li>Specialized Services: Roof cleaning, graffiti removal, and more.</li>
     </ul>
-    
-    <h2>Get in Touch</h2>
-    <p>If you're ready to see your property shine, contact us today for a free quote!</p>
+
   </div>
 </div>
 

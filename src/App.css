@@ -253,6 +253,10 @@ label {
   display: block;
   margin-bottom: 10px;
 }
+.contactpage{
+  margin: 10%;
+  
+}
 
 input, select, textarea {
   width: 100%;

@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-logo">
         <img className='logo' src={logo} alt="Company Logo" />
-        <span>Tylers Pressure Washing</span>
+        <span>Time2Clean LLC</span>
         
       </div>
       <p className='numberinnavbar'>317-789-1012</p>
