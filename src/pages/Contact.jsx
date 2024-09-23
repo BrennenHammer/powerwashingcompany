@@ -1,14 +1,28 @@
 import React from "react";
 
 const ContactPage = () => {
-    return (
-        <div className="contactpage">
-            <p>We bring back the beauty of your surfaces—homes, driveways, decks, and more.</p>
-            <button>email@email.com</button>
-            <h2>Get in Touch</h2>
-    <p>If you're ready to see your property shine, contact us today for a free quote!</p>
+  return (
+    <div className="contactpage">
+      <div className="contact-info">
+        <h1>Get in Touch</h1>
+        <p>Ready to see your property shine? Contact us today for a free quote!</p>
+        <div className="contact-details">
+          <div className="detail">
+            <span className="icon-mail"></span>
+            <p>email@email.com</p>
+          </div>
+          <div className="detail">
+            <span className="icon-phone"></span>
+            <p>317-789-1012</p>
+          </div>
         </div>
-    );
-}
+      </div>
+
+      <div className="call-to-action">
+        <button>Get a Free Quote</button>
+      </div>
+    </div>
+  );
+};
 
 export default ContactPage;

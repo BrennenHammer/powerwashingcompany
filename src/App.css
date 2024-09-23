@@ -14,7 +14,7 @@
 }
 .numberinnavbar{
   margin-right: 20%;
-  color: rgb(8, 8, 192);
+  color: rgb(10, 10, 174);
 }
 
 .image-container {
@@ -242,7 +242,7 @@
 
 form {
   max-width: 500px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -253,21 +253,18 @@ label {
   display: block;
   margin-bottom: 10px;
 }
-.contactpage{
-  margin: 10%;
-  
-}
+
 
 input, select, textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 button[type="submit"] {
-  background-color: #40a443;
+  background-color: #4065a4;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -276,7 +273,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #3dac40;
+  background-color: #ab3939;
 }
 .service-img {
   transition: transform 0.2s ease-in-out;
@@ -284,4 +281,200 @@ button[type="submit"]:hover {
 
 .service-img:hover {
   transform: scale(1.1);
+}
+.contactpage {
+  max-width: 80%;
+  margin: 5% auto;
+  padding: 5%;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-info h1 {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.detail {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-mail {
+  background-image: linear-gradient(to bottom, #4CAF50, #3e8e41);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.icon-phone {
+  background-image: linear-gradient(to bottom, #4CAF50, #3e8e41);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.icon-mail::before {
+  content: "\2709";
+}
+
+.icon-phone::before {
+  content: "\260E";
+}
+
+.call-to-action {
+  margin-top: 40px;
+}
+
+.call-to-action button {
+  background-color: #4c61af;
+  color: #fff;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.call-to-action button:hover {
+  background-color: #ab3939;
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+  .contactpage {
+    margin: 2% auto;
+    padding: 2%;
+  }
+  .detail {
+    margin: 10px;
+  }
+}
+
+/* Smaller mobile screens */
+@media only screen and (max-width: 480px) {
+  .contactpage {
+    margin: 1% auto;
+    padding: 1%;
+  }
+  .detail {
+    margin: 5px;
+  }
+}
+.services-page {
+  max-width: 90%;
+  margin: 0% auto;
+  padding: 5%;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.service-card h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 0;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.service-card li::before {
+  content: "\2022";
+  font-weight: bold;
+  font-size: 18px;
+  color: #4CAF50;
+  margin-right: 5px;
+}
+
+.cta-button {
+  background-color: #4c7caf;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ab3939;
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+  .service-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Smaller mobile screens */
+@media only screen and (max-width: 480px) {
+  .service-card {
+    font-size: 14px;
+  }
+  .services-container {
+    flex-direction: column;
+  }
 }
