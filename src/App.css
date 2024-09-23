@@ -81,7 +81,7 @@
   margin: 20px;
   margin-top: -12%;
   z-index: 10;
-  border: 2px solid white;
+  border: 2px solid rgb(241, 233, 233);
   text-align: center;
   border-radius: 8px;
   box-sizing: border-box; /* Ensure padding and borders are included in the width */
