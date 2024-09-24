@@ -1,9 +1,13 @@
 {
+<<<<<<< HEAD
   "name": "powerwashing-server",
+=======
+  "name": "powerwashing-client",
+>>>>>>> eb7f268ed104a1e3adb360c56e4475b6e559ae95
   "version": "1.0.0",
-  "main": "server.js",
-  "type": "module",
+  "main": "src/index.js",
   "scripts": {
+<<<<<<< HEAD
     "dev": "nodemon server/server.js",
     "start": "react-scripts start"
   },
@@ -16,5 +20,31 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.13.8",
     "nodemailer": "^6.9.15"
+=======
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "axios": "^1.7.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+>>>>>>> eb7f268ed104a1e3adb360c56e4475b6e559ae95
   }
 }

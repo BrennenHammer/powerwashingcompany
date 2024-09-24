@@ -1,0 +1,480 @@
+.navbar-logo {
+  display: flex;
+  margin-right: 20%;
+  align-items: center; /* Vertically align logo and text */
+  flex: 1; /* This will allow the logo section to take up space */
+  justify-content: center; /* This centers the logo and company name */
+}
+
+.navbar a {
+  padding: 5px;
+  margin-left: 25px;
+  color: rgb(2, 2, 2);
+  text-decoration: none; 
+}
+.numberinnavbar{
+  margin-right: 20%;
+  color: rgb(10, 10, 174);
+}
+
+.image-container {
+  display: flex;
+  margin-top: 4vw;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 50%;
+}
+
+.home-img1 {
+  width: 100%;
+  display: block;
+}
+
+.homeheader {
+  position: absolute;
+  font-size: 1.4em;
+  top: 20%;
+  left: 75%;
+  background-color: rgb(238, 231, 231);
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  color: rgb(13, 8, 8);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.home-img2 {
+  width: 50%
+}
+.logo{
+  border-radius: 50%;
+  height: 25px;
+  margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .homeheader h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .homeheader h1 {
+    font-size: 1.2em;
+  }
+}
+
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 70%; /* Ensures the section takes up 90% of the screen */
+  padding: 20px 0; /* Adds some padding on the top and bottom */
+}
+
+.service {
+  flex: 1 1 20%; /* Ensures each service takes up about 22% of the width (4 services total with some space) */
+  margin: 20px;
+  margin-top: -12%;
+  z-index: 10;
+  border: 2px solid rgb(241, 233, 233);
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+.service-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: Add rounded corners to the images */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .service {
+    flex: 1 1 45%; /* Adjusts to 45% width on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    flex-direction: column;
+  }
+  .service {
+    flex: 1 1 100%; /* Stacks each service on top of each other on small screens */
+  }
+}
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #e9dfdf;
+  height: 4vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  justify-content: space-between; /* Space out logo and links */
+  padding: 0 15px; /* Adds padding to both sides */
+  box-sizing: border-box; /* Ensures padding doesn't push content off-screen */
+}
+
+.logo {
+  border-radius: 50%;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px; /* Adjust spacing between links */
+}
+
+.navbar a {
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 6vw; /* Adjusts height for smaller screens */
+  }
+
+  .navbar-logo {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 8vw; /* Adjusts height for very small screens */
+    flex-direction: column; /* Stacks logo and links */
+    align-items: center; /* Center align the content */
+  }
+
+  .navbar-links {
+    margin-right: 0; /* Remove the right margin */
+    margin-top: 10px; /* Add some space between logo and links */
+  }
+}
+.about-section {
+  background-color: #f4f4f4;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.about-section h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-section h2 {
+  color: #555;
+  font-size: 1.8em;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.about-mission {
+  font-size: 1.2em;
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-content ul li {
+  font-size: 1.1em;
+  margin-bottom: 9.5px;
+}
+
+.about-content ul li strong {
+  color: #1a1919;
+}
+
+.about-content p {
+  margin-top: 20px;
+  color: #757272;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 30px;
+  }
+
+  .about-section h1 {
+    font-size: 2em;
+  }
+
+  .about-section h2 {
+    font-size: 1.5em;
+  }
+
+  .about-mission, .about-content p, .about-content ul li {
+    font-size: 1em;
+  }
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+input, select, textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #4065a4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ab3939;
+}
+.service-img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-img:hover {
+  transform: scale(1.1);
+}
+.contactpage {
+  max-width: 80%;
+  margin: 5% auto;
+  padding: 5%;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-info h1 {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.detail {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-mail {
+  background-image: linear-gradient(to bottom, #4CAF50, #3e8e41);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.icon-phone {
+  background-image: linear-gradient(to bottom, #4CAF50, #3e8e41);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.icon-mail::before {
+  content: "\2709";
+}
+
+.icon-phone::before {
+  content: "\260E";
+}
+
+.call-to-action {
+  margin-top: 40px;
+}
+
+.call-to-action button {
+  background-color: #4c61af;
+  color: #fff;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.call-to-action button:hover {
+  background-color: #ab3939;
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+  .contactpage {
+    margin: 2% auto;
+    padding: 2%;
+  }
+  .detail {
+    margin: 10px;
+  }
+}
+
+/* Smaller mobile screens */
+@media only screen and (max-width: 480px) {
+  .contactpage {
+    margin: 1% auto;
+    padding: 1%;
+  }
+  .detail {
+    margin: 5px;
+  }
+}
+.services-page {
+  max-width: 90%;
+  margin: 0% auto;
+  padding: 5%;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.service-card h2 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 0;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.service-card li::before {
+  content: "\2022";
+  font-weight: bold;
+  font-size: 18px;
+  color: #4CAF50;
+  margin-right: 5px;
+}
+
+.cta-button {
+  background-color: #4c7caf;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ab3939;
+}
+
+/* Mobile-specific styles */
+@media only screen and (max-width: 768px) {
+  .service-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Smaller mobile screens */
+@media only screen and (max-width: 480px) {
+  .service-card {
+    font-size: 14px;
+  }
+  .services-container {
+    flex-direction: column;
+  }
+}
