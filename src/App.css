@@ -5,7 +5,9 @@
   flex: 1; /* This will allow the logo section to take up space */
   justify-content: center; /* This centers the logo and company name */
 }
-
+body{
+  background-color: #f1ebeb;
+}
 .navbar a {
   padding: 5px;
   margin-left: 25px;
@@ -14,7 +16,7 @@
 }
 .numberinnavbar{
   margin-right: 20%;
-  color: rgb(10, 10, 174);
+  color: rgb(17, 17, 173);
 }
 
 .image-container {
@@ -166,7 +168,7 @@
   }
 }
 .about-section {
-  background-color: #f4f4f4;
+  background-color: #99bacb;
   padding: 50px;
   max-width: 800px;
   margin: 0 auto;
@@ -244,14 +246,16 @@ form {
   max-width: 500px;
   margin: 20px auto;
   padding: 20px;
+  background-color: #99bacb;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 
@@ -283,11 +287,11 @@ button[type="submit"]:hover {
   transform: scale(1.1);
 }
 .contactpage {
-  max-width: 80%;
+  max-width: 50%;
   margin: 5% auto;
   padding: 5%;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #99bacb;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -297,7 +301,7 @@ button[type="submit"]:hover {
 }
 
 .contact-info {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .contact-info h1 {
@@ -389,7 +393,7 @@ button[type="submit"]:hover {
   margin: 0% auto;
   padding: 5%;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #99bacb;
 }
 
 .services-container {
