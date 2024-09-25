@@ -2,6 +2,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import authRouter from './routes/auth.js';
+import usersRouter from './routes/users.js';
 dotenv.config();
 
 const app = express();
@@ -23,6 +25,8 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Powerwashing Company API');
 });
 
+app.use('/api/auth', authRouter);
+app.use('/api/users', usersRouter);
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
