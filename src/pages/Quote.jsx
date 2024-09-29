@@ -14,7 +14,7 @@ const QuotePage = () => {
   };
 
   return (
-    <div>
+    <div className="quoteDiv">
       <h1>Get a Quote</h1>
       <form action="https://formspree.io/f/mwkddaql" method="post" onSubmit={handleSubmit}>
         <label>

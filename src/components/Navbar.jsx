@@ -1,16 +1,33 @@
 import { Link } from 'react-router-dom';
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../images/logo.png';
 
 function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <img className='logo' src={logo} alt="Company Logo" />
         <span>Time2Clean LLC</span>
-        
       </div>
       <p className='numberinnavbar'>317-789-1012</p>
+      <div className="mobile-nav">
+        <div className="mobile-menu-icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        {mobileMenuOpen && (
+          <div className="mobile-dropdown">
+            <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+            <Link to="/services" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+            <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+            <Link to="/quote" onClick={() => setMobileMenuOpen(false)}>Get Quote</Link>
+          </div>
+        )}
+      </div>
       <div className="navbar-links">
         <Link to="/">Home</Link>
         <Link to="/services">Services</Link>
