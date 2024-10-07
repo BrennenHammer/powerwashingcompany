@@ -86,13 +86,13 @@ body{
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 70%; /* Ensures the section takes up 90% of the screen */
-  padding: 20px 0; /* Adds some padding on the top and bottom */
+  width: 70%;
+  padding: 10px; /* Adds some padding on the top and bottom */
 }
 
 .service {
   flex: 1 1 20%; /* Ensures each service takes up about 22% of the width (4 services total with some space) */
-  margin: 20px;
+  margin: 10px;
   margin-top: -12%;
   z-index: 10;
   border: 2px solid lightgray;
@@ -108,8 +108,8 @@ body{
 }
 @media (max-width: 1080px) {
   .service-img{
-    height: 70%;
-    width: 120%;
+    height: 60%;
+    width: 110%;
     margin-left: -13px;
   }
   
@@ -117,21 +117,21 @@ body{
 /* Make it responsive */
 @media (max-width: 768px) {
   .service {
-    margin-top: 17%;
-    flex-basis: 28%; /* Adjusts to 45% width on tablets */
+    margin-top: 12%;
+    flex-basis: 25%; /* Adjusts to 45% width on tablets */
   }
 }
 
 @media (max-width: 480px) {
   .service {
-    margin-top: 12%;
+    margin-top: 8%;
     flex-basis: 28%; /* Stacks each service on top of each other on small screens */
   }
   @media (max-width: 1080px) {
   .service {
-    width: 35%;
+    width: 36%;
     margin-top: 18%;
-    flex-basis: 2%; /* Stacks each service on top of each other on small screens */
+    flex-basis: 60%;
   }
 }
 }
