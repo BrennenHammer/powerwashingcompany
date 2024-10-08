@@ -5,13 +5,17 @@ import logo from '../images/logo.png';
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleMenuClick = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <img className='logo' src={logo} alt="Company Logo" />
         <span>Time2Clean LLC</span>
+        <p className='numberinnavbar'>317-789-1012</p>
       </div>
-      <p className='numberinnavbar'>317-789-1012</p>
+      
       <div className="mobile-nav">
         <div className="mobile-menu-icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           <span></span>

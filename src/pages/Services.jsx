@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const ServicesPage = () => {
   return (
@@ -60,8 +61,10 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      <button className="cta-button">Get a Free Quote</button>
-    </div>
+      <Link to="/quote">
+  <button className="cta-button">Get a Free Quote</button>
+</Link>
+</div>
   );
 };
 

@@ -15,11 +15,9 @@ body{
   text-decoration: none; 
 }
 .numberinnavbar{
-  margin-right: 20%;
+  margin-right: 30%;
   color: rgb(17, 17, 173);
-
 }
-
 
 .image-container {
   display: flex;
@@ -38,10 +36,10 @@ body{
 
 .homeheader {
   position: absolute;
-  font-size: 1.3em;
+  font-size: 1.2em;
   top: 20%;
   left: 75%;
-  background-color: rgb(238, 231, 231);
+  background-color: rgb(238, 228, 228);
   border-radius: 5px;
   transform: translate(-50%, -50%);
   color: rgb(13, 8, 8);
@@ -87,12 +85,13 @@ body{
   flex-wrap: wrap;
   margin: 0 auto;
   width: 70%;
-  padding: 10px; /* Adds some padding on the top and bottom */
+  padding: 10px 0; /* Adds some padding on the top and bottom */
 }
 
 .service {
   flex: 1 1 20%; /* Ensures each service takes up about 22% of the width (4 services total with some space) */
   margin: 10px;
+  margin-bottom: -20%;
   margin-top: -12%;
   z-index: 10;
   border: 2px solid lightgray;
@@ -130,10 +129,25 @@ body{
   @media (max-width: 1080px) {
   .service {
     width: 36%;
+   
     margin-top: 18%;
     flex-basis: 60%;
   }
 }
+}
+
+@media (max-width: 768px) {
+  h3 {
+    border-bottom: 2px solid black;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeheader{
+    background-color: lightgray;
+    width: 90%;
+    margin-top: 55%;
+  }
 }
 .navbar-links {
   display: flex;
@@ -192,7 +206,9 @@ body{
   }
 }
 .mobile-nav {
-  display: none;
+  position: relative;
+  top: -147%;
+  left: 35%;
 }
 
 @media (max-width: 768px) {
@@ -207,11 +223,14 @@ body{
 .mobile-menu-icon {
   cursor: pointer;
   display: flex;
-  margin-top: -255%;
-  margin-left: 650%;
   flex-direction: column;
   justify-content: space-between;
   height: 20px;
+  position: absolute;
+  top: 0%;
+  right: 40%;
+  transform: translateY(-50%);
+  z-index: 1001;
 }
 
 .mobile-menu-icon span {
@@ -228,8 +247,9 @@ body{
 }
 
 .mobile-dropdown {
-  background-color: #e9dfdf;
+  background-color: #cde0e8;
   padding: 10px;
+  z-index: 1001;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const ContactPage = () => {
   return (
@@ -19,8 +20,9 @@ const ContactPage = () => {
       </div>
 
       <div className="call-to-action">
-        <button>Get a Free Quote</button>
-      </div>
+      <Link to="/quote">
+  <button className="get-a-quote-btn">Get a Free Quote</button>
+</Link>      </div>
     </div>
   );
 };
