@@ -8,6 +8,22 @@
 body{
   background-color: lightgray;
 }
+.navbar-logo span{
+  white-space: nowrap; 
+}
+@media (max-width: 768px){
+  .navbar-logo span{
+    font-size: 16px;
+    margin-right: -14px;
+  }
+}
+@media (max-width: 768px){
+  .numberinnavbar{
+    font-size: 14px;
+    padding-left: 20px;
+    margin-left: 15px;
+  }
+}
 .navbar a {
   padding: 5px;
   margin-left: 25px;
@@ -17,6 +33,7 @@ body{
 .numberinnavbar{
   margin-right: 30%;
   color: rgb(17, 17, 173);
+  white-space: nowrap; 
 }
 
 .image-container {
@@ -146,7 +163,7 @@ body{
   .homeheader{
     background-color: lightgray;
     width: 90%;
-    margin-top: 55%;
+    margin-top: 47%;
   }
 }
 .navbar-links {
@@ -162,7 +179,7 @@ body{
   top: 0;
   width: 100%;
   z-index: 100;
-  justify-content: space-between; /* Space out logo and links */
+  justify-content: center; /* Space out logo and links */
   padding: 0 15px; /* Adds padding to both sides */
   box-sizing: border-box; /* Ensures padding doesn't push content off-screen */
 }
@@ -207,7 +224,7 @@ body{
 }
 .mobile-nav {
   position: relative;
-  top: -147%;
+  top: -120%;
   left: 35%;
 }
 
@@ -235,10 +252,9 @@ body{
 
 .mobile-menu-icon span {
   display: block;
-  width: 25px;
+  width: 20px;
   height: 3px;
   background-color: #333;
-  margin-bottom: 5px;
   transition: all 0.3s ease;
 }
 
@@ -248,7 +264,7 @@ body{
 
 .mobile-dropdown {
   background-color: #cde0e8;
-  padding: 10px;
+  padding: 5px;
   z-index: 1001;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
