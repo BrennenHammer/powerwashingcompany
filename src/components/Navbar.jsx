@@ -13,7 +13,9 @@ function Navbar() {
       <div className="navbar-logo">
         <img className='logo' src={logo} alt="Company Logo" />
         <span>Time2Clean LLC</span>
+        <div>
         <p className='numberinnavbar'>317-789-1012</p>
+        </div>
       </div>
       
       <div className="mobile-nav">

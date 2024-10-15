@@ -36,6 +36,7 @@ body{
   white-space: nowrap; 
 }
 
+
 .image-container {
   display: flex;
   margin-top: 4vw;
@@ -146,7 +147,6 @@ body{
   @media (max-width: 1080px) {
   .service {
     width: 36%;
-   
     margin-top: 18%;
     flex-basis: 60%;
   }
@@ -155,7 +155,7 @@ body{
 
 @media (max-width: 768px) {
   h3 {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
   }
 }
 
@@ -168,7 +168,9 @@ body{
 }
 .navbar-links {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 .navbar {
   display: flex;
@@ -190,10 +192,6 @@ body{
   margin-right: 5px;
 }
 
-.navbar-links {
-  display: flex;
-  gap: 20px; /* Adjust spacing between links */
-}
 
 .navbar a {
   padding: 5px;
@@ -224,32 +222,52 @@ body{
 }
 .mobile-nav {
   position: relative;
-  top: -120%;
-  left: 35%;
+  justify-content: flex-end; /* Changed from center to flex-end */
+  align-items: center;
+  display: none;
+  top: 0%;
+  left: -5%;
 }
 
 @media (max-width: 768px) {
   .mobile-nav {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
   }
   .navbar-links {
     display: none;
   }
 }
 
+
+
 .mobile-menu-icon {
   cursor: pointer;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   height: 20px;
   position: absolute;
-  top: 0%;
-  right: 40%;
+  top: 50%;
+  margin-top: vw;
+  right: 5%;
   transform: translateY(-50%);
   z-index: 1001;
 }
-
+@media (max-width: 768px) {
+  .mobile-menu-icon {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .mobile-menu-icon {
+    display: flex;
+   
+  }
+}
 .mobile-menu-icon span {
   display: block;
   width: 20px;
@@ -263,8 +281,13 @@ body{
 }
 
 .mobile-dropdown {
-  background-color: #cde0e8;
+  background-color: #dde7eb;
   padding: 5px;
+  border: 1px solid black;
+  margin-top: 190%;
+  position: relative;
+  left: 35%;
+  transition: opacity 0.3s ease-in-out;
   z-index: 1001;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
