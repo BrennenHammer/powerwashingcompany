@@ -31,11 +31,25 @@ body{
   text-decoration: none; 
 }
 .numberinnavbar{
-  margin-right: 30%;
+  margin-left: 150%;
   color: rgb(17, 17, 173);
   white-space: nowrap; 
 }
-
+@media (max-width: 480px){
+.numberinnavbar{
+  margin-left: 10%;
+}
+}
+@media (max-width: 768px){
+  .numberinnavbar{
+    margin-left: 10%;
+  }
+  }
+@media (max-width: 480px){
+  .navbar-logo{
+    margin-left: -15%;
+  }
+  }
 
 .image-container {
   display: flex;
@@ -241,6 +255,19 @@ body{
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .mobile-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    top: -60%;
+    left: 45%;
+  }
+  .navbar-links {
+    display: none;
+  }
+}
 
 
 
@@ -264,10 +291,11 @@ body{
 }
 @media (max-width: 480px) {
   .mobile-menu-icon {
-    display: flex;
-   
+   display: flex;
+    margin-right: 45%;
   }
 }
+
 .mobile-menu-icon span {
   display: block;
   width: 20px;

@@ -10,11 +10,11 @@ const ContactPage = () => {
         <div className="contact-details">
           <div className="detail">
             <span className="icon-mail"></span>
-            <p>email@email.com</p>
+            <p>time2cleanindy@gmail.com</p>
           </div>
           <div className="detail">
             <span className="icon-phone"></span>
-            <p>317-789-1012</p>
+            <p>317-500-3392</p>
           </div>
         </div>
       </div>
