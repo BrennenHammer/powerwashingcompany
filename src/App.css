@@ -86,6 +86,7 @@ body{
   border-radius: 50%;
   height: 25px;
   margin-right: 5px;
+  border: 1px solid rgb(158, 196, 192);
 }
 
 
@@ -200,11 +201,7 @@ body{
   box-sizing: border-box; /* Ensures padding doesn't push content off-screen */
 }
 
-.logo {
-  border-radius: 50%;
-  height: 25px;
-  margin-right: 5px;
-}
+
 
 
 .navbar a {
