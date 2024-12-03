@@ -415,7 +415,7 @@ form {
   background-color: #99bacb;
   border: 1px solid #5c5252;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(10, 9, 9, 0.1);
+  box-shadow: 0 0 10px #0a09091a;
 }
 
 .quoteDiv{
@@ -456,7 +456,7 @@ input, select, textarea {
 
 button[type="submit"] {
   background-color: #4065a4;
-  color: #fff;
+  color: #f7f1f1;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
