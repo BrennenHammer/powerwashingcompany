@@ -132,7 +132,11 @@ body{
   border-radius: 8px;
   box-sizing: border-box; /* Ensure padding and borders are included in the width */
 }
-
+body.dark-mode .service {
+  border: 2px solid black; /* Or match the background color */
+  background-color: #333; /* Adjust to match your dark mode theme */
+  color: white; /* Optional: Update text color */
+}
 .service-img {
   width: 100%;
   height: auto;
