@@ -127,7 +127,7 @@ body{
   margin-bottom: -20%;
   margin-top: -12%;
   z-index: 10;
-  border: 2px solid lightgray;
+  border: 2px solid black;
   text-align: center;
   border-radius: 8px;
   box-sizing: border-box; /* Ensure padding and borders are included in the width */
