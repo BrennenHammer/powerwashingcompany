@@ -6,7 +6,7 @@
   justify-content: center; /* This centers the logo and company name */
 }
 body{
-  background-color: lightgray;
+  background-color: rgb(215, 211, 211);
 }
 .navbar-logo span{
   white-space: nowrap; 
@@ -122,7 +122,7 @@ body{
 }
 
 .service {
-  flex: 1 1 20%; /* Ensures each service takes up about 22% of the width (4 services total with some space) */
+  flex: 1 1 19%; /* Ensures each service takes up about 22% of the width (4 services total with some space) */
   margin: 10px;
   margin-bottom: -20%;
   margin-top: -12%;
