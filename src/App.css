@@ -127,16 +127,22 @@ body{
   margin-bottom: -20%;
   margin-top: -12%;
   z-index: 10;
-  border: 2px solid black;
+  border: 2px solid lightgray;
   text-align: center;
   border-radius: 8px;
   box-sizing: border-box; /* Ensure padding and borders are included in the width */
 }
-body.dark-mode .service {
-  border: 2px solid black; /* Or match the background color */
-  background-color: #333; /* Adjust to match your dark mode theme */
-  color: white; /* Optional: Update text color */
+@media (prefers-color-scheme: dark) {
+  .service {
+    border: 2px solid #444; /* Adjust border color for dark mode */
+  }
+
+  body {
+    background-color: #121212; /* Dark mode background */
+    color: #ffffff; /* Dark mode text color */
+  }
 }
+
 .service-img {
   width: 100%;
   height: auto;
