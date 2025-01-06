@@ -53,6 +53,7 @@ body{
 
 .image-container {
   display: flex;
+  opacity: 1%;
   margin-top: 4vw;
 }
 
@@ -116,6 +117,7 @@ body{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  opacity: 1%;
   margin: 0 auto;
   width: 70%;
   padding: 10px 0; /* Adds some padding on the top and bottom */
@@ -190,6 +192,7 @@ body{
 }
 .navbar {
   display: flex;
+  opacity: 1%;
   align-items: center;
   background-color: #e9dfdf;
   height: 4vw;
