@@ -5,7 +5,7 @@ const ServicesPage = () => {
   return (
     <div className="services-page">
       <h1>Our Services</h1>
-      <p>We provide top-notch power washing services to restore the beauty of your surfaces.</p>
+      <p>I provide top-notch power washing services to restore the beauty of your surfaces.</p>
 
       <div className="services-container">
         <div className="service-card">
