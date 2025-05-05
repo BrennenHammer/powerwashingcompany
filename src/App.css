@@ -1,9 +1,12 @@
 .navbar-logo {
   display: flex;
-  margin-right: 20%;
+  margin-right: 30%;
   align-items: center; /* Vertically align logo and text */
   flex: 1; /* This will allow the logo section to take up space */
-  justify-content: center; /* This centers the logo and company name */
+  justify-content: center;
+  @media (max-width: 900px){
+    margin-left: -70px;
+  }
 }
 body{
   background-color: rgb(215, 211, 211);
@@ -112,62 +115,6 @@ body{
     margin-top: 50%;
   }
 }
-.services-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 70%;
-  padding: 10px 0; /* Adds some padding on the top and bottom */
-}
-
-.service {
-  flex: 1 1 19%; /* Ensures each service takes up about 22% of the width (4 services total with some space) */
-  margin: 10px;
-  margin-bottom: -20%;
-  margin-top: -12%;
-  z-index: 10;
-  border-top: 2px solid rgb(219, 208, 208);
-  text-align: center;
-  border-radius: 8px;
-  box-sizing: border-box; /* Ensure padding and borders are included in the width */
-}
-
-
-.service-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px; /* Optional: Add rounded corners to the images */
-}
-@media (max-width: 1080px) {
-  .service-img{
-    height: 60%;
-    width: 110%;
-    margin-left: -13px;
-  }
-  
-}
-/* Make it responsive */
-@media (max-width: 768px) {
-  .service {
-    margin-top: 12%;
-    flex-basis: 25%; /* Adjusts to 45% width on tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  .service {
-    margin-top: 8%;
-    flex-basis: 28%; /* Stacks each service on top of each other on small screens */
-  }
-  @media (max-width: 1080px) {
-  .service {
-    width: 36%;
-    margin-top: 18%;
-    flex-basis: 60%;
-  }
-}
-}
 
 @media (max-width: 768px) {
   h3 {
@@ -186,8 +133,12 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
+  @media (max-width: 1100px){
+    margin-left: -150px;
+  }
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -201,8 +152,6 @@ body{
   padding: 0 15px; /* Adds padding to both sides */
   box-sizing: border-box; /* Ensures padding doesn't push content off-screen */
 }
-
-
 
 
 .navbar a {
@@ -241,7 +190,7 @@ body{
   left: -5%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 988px) {
   .mobile-nav {
     display: flex;
     justify-content: flex-end;
@@ -282,7 +231,7 @@ body{
   transform: translateY(-50%);
   z-index: 1001;
 }
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .mobile-menu-icon {
     display: flex;
   }
