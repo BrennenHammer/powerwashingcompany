@@ -10,7 +10,7 @@ import serviceImage4 from '../images/serviceimage4.jpeg';
 
 const HomePage = () => {
     return (
-        <div>
+        <div class ="homeDiv">
             <Navbar />
             <ImageContainer>
                 <TopImage src={powerwashImage} alt="Powerwashing service" />
