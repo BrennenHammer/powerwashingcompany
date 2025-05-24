@@ -108,8 +108,7 @@ export default HomePage;
 const ImageContainer = styled.div`
     display: flex;
     width: 100%;
-    height: auto;
-     @media (max-width: 600px) {
+     @media (max-width: 820px) {
     display: block;
   }
 `;
@@ -118,7 +117,7 @@ const TopImage = styled.img`
     width: 50%;
     height: auto;
     object-fit: cover;
-     @media (max-width: 600px) {
+     @media (max-width: 820px) {
     width: 100%;
     display: ${props => props.hideOnMobile ? 'none' : 'block'};
   }
@@ -141,7 +140,8 @@ const Service = styled.div`
 
 const ServiceImg = styled.img`
     width: 90%;
-    height: 170px;
+    max-width: 500px;
+    height: 50%;
     border: 1px solid white;
     border-radius: 8px;
 `;
