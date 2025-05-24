@@ -374,12 +374,12 @@ form {
   align-items: center;
 }
 .quoteDiv h1{
-  margin-left: 42%;
+  margin-left: 400px;
   margin-top: -70px;
 }
 @media (max-width: 780px) {
   .quoteDiv h1{
-    margin-left: 27%;
+    margin-left: 25%;
   }
 }
 @media (max-width: 1080px) {

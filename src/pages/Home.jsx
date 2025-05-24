@@ -98,6 +98,50 @@ const HomePage = () => {
               <button className="cta-button">Get a Free Quote</button>
             </Link>
             </div>
+             <div className="contactpage">
+                  <div className="contact-info">
+                    <h1>Get in Touch</h1>
+                    <p>Ready to see your property shine? Contact us today for a free quote!</p>
+                    <div className="contact-details">
+                      <div className="detail">
+                        <span className="icon-mail"></span>
+                        <p>time2cleanindy@gmail.com</p>
+                      </div>
+                      <div className="detail">
+                        <span className="icon-phone"></span>
+                        <p>317-500-3392</p>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div className="call-to-action">
+                  <Link to="/quote">
+              <button className="get-a-quote-btn">Get a Free Quote</button>
+            </Link>      </div>
+                </div>
+                <div className="about-section">
+  <h1>About Us</h1>
+  <p className="about-mission">My mission is simple: to offer the highest quality powerwashing services with unparalleled customer satisfaction...</p>
+  
+  <div className="about-content">
+    <h2>Why Choose Me?</h2>
+    <ul>
+      <li><strong>Experienced Professionals:</strong> I am an experienced technician who know the ins and outs of powerwashing...</li>
+      <li><strong>Cutting-Edge Equipment:</strong> I use the latest in powerwashing technology to effectively remove dirt, grime, mold, and stains without damaging your surfaces...</li>
+      <li><strong>Eco-Friendly Solutions:</strong> I care about the environment, which is why we use biodegradable, non-toxic cleaning solutions...</li>
+      <li><strong>Customer Satisfaction Guaranteed:</strong> I take pride in my work, and your satisfaction is our top priority...</li>
+    </ul>
+    
+    <h2>Our Services</h2>
+    <ul>
+      <li>Residential Powerwashing: Driveways, sidewalks, decks, patios, siding, and more.</li>
+      <li>Commercial Powerwashing: Storefronts, parking lots, building exteriors, and more.</li>
+      <li>Specialized Services: Roof cleaning, graffiti removal, and more.</li>
+    </ul>
+
+  </div>
+</div>
+
         </div>
     );
 };
